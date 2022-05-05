@@ -6,12 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed;
     Animator m_Animator;
+    Rigidbody m_Rigidbody;
     Vector3 m_Movement;
 
     // Start is called before the first frame update
     void Start()
     {
         m_Animator = GetComponent<Animator>();
+        m_Rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -26,8 +28,12 @@ public class PlayerMovement : MonoBehaviour
         bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
         bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);
         bool IsWalking = hasHorizontalInput || hasVerticalInput;
-        m_Animator.SetBool("IsWalking", isWalking);
+        m_Animator.SetBool("IsWalking", IsWalking);
 
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
+    }
+    void OnAnimatorMove()
+    {
+
     }
 }
