@@ -34,6 +34,6 @@ public class PlayerMovement : MonoBehaviour
     }
     void OnAnimatorMove()
     {
-
+        m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
     }
 }
