@@ -4478,5 +4478,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 3341139560817724013, guid: 2e89955355d99454fa11100862dcc331,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7894908380125482275}
+    - target: {fileID: 3341139560817724013, guid: 2e89955355d99454fa11100862dcc331,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 759887350}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e89955355d99454fa11100862dcc331, type: 3}
