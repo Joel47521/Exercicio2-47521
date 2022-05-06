@@ -352,6 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759887348}
   - component: {fileID: 759887349}
+  - component: {fileID: 759887350}
   m_Layer: 0
   m_Name: GameEnding
   m_TagString: Untagged
@@ -386,6 +387,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &759887350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759887347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd4ef4446b4e994e863155294590d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1
+  displayImageDuration: 1
+  player: {fileID: 1788782627}
+  exitBackgroundImageCanvasGroup: {fileID: 1140758717}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3928,6 +3945,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367700633}
   m_CullTransparentMesh: 1
+--- !u!1 &1788782627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7894908379877261094, guid: 4c3f6a61b39a73b4696bbd569b1d1fce,
+    type: 3}
+  m_PrefabInstance: {fileID: 7894908380125482274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2038537624
 GameObject:
   m_ObjectHideFlags: 0
